@@ -1,7 +1,7 @@
 import express from 'express'
-import { login } from '../controllers/auth'
+import { login } from '../controllers/auth.js'
 
-const routers = express.routers()
+const routers = express.Router()
 
 routers.post('/login', login)
 
